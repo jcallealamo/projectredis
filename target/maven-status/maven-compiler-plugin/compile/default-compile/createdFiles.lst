@@ -1,0 +1,6 @@
+com\example\examplerest\config\RedisConfig.class
+com\example\examplerest\rest\PersonsRest.class
+com\example\examplerest\pojo\business\Persons.class
+com\example\examplerest\pojo\specialized\PersonsService.class
+com\example\examplerest\ExampleRestApplication.class
+com\example\examplerest\service\RedisHashService.class
