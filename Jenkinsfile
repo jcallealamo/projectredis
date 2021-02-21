@@ -1,12 +1,19 @@
 node {
+  agent any
+  
+    tools {
+        maven 'Maven_3.5.2' 
+    }
+  
   stage('SCM Checkout') {
     
     git 'https://github.com/jcallealamo/projectredis.git'
   }
   
-  stage('Compile-Package') {
-    withMaven(maven : 'apache-maven-3.6.3') {
-      bat'mvn clean compile'
+    stages {
+        stage('Compile stage') {
+            steps {
+                bat "mvn clean compile" 
+        }
     }
-  }
 }
