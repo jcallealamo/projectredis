@@ -2,7 +2,7 @@ node {
   agent any
   
     tools {
-        maven 'Maven_3.5.2' 
+        maven 'apache-maven-3.6.3' 
     }
   
   stage('SCM Checkout') {
@@ -14,6 +14,8 @@ node {
         stage('Compile stage') {
             steps {
                 bat "mvn clean compile" 
-        }
-    }
+              }
+          }
+      }
+    
 }
