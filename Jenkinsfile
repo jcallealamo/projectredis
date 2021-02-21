@@ -5,7 +5,7 @@ node {
   }
   
   stage('Compile-Package') {
-    def mvnHome = tool name: 'M2', type: 'maven'
+    def mvnHome = tool name: 'M2_HOME', type: 'maven'
     bat'mvn clean compile'
   }
 }
