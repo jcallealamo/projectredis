@@ -19,6 +19,7 @@ public class PersonsRest {
 	
 	@GetMapping
 	public Persons findPersons(@RequestParam String idPersons)  {
+		System.out.println("hola a todos");
 		return personsService.findPersons(idPersons);
 	}
 
